@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paket Lengkap AutoCAD Mastery - Siap Kerja</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts: Montserrat (Headers) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1B2A;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* Gimmick Grid AutoCAD Bawaan */
+        .autocad-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 245, 212, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 245, 212, 0.03) 1px, transparent 1px);
+        }
+/* Perbaikan Animasi Pulse Tombol */
+    @keyframes joss-pulse {
+        0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.4); }
+        50% { transform: scale(1.04); box-shadow: 0 20px 35px -5px rgba(255, 107, 0, 0.7); }
+    }
+    .tombol-pulse {
+        animation: joss-pulse 2s infinite ease-in-out;
+    }
+</style>
+</head>
+<body class="text-slate-300 antialiased autocad-grid">
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden border-b border-slate-800">
+        <div class="absolute inset-0 bg-radial from-transparent via-[#0D1B2A] to-[#0D1B2A] z-0"></div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 w-full">
+            <!-- Kiri: Copywriting -->
+            <div class="space-y-6 text-center lg:text-left">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                    Kuasai AutoCAD dari Nol Sampai <span class="text-[#00F5D4]">Siap Kerja</span> dengan 1300+ Materi Lengkap
+                </h1>
+                <p class="text-sm font-semibold text-slate-400 border-l-2 border-[#00F5D4] pl-3 py-1 max-w-xl mx-auto lg:mx-0">
+                    Teknik Sipil, Arsitektur &amp; Teknik Mesin
+                </p>
+                <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Belajar AutoCAD lebih cepat tanpa harus mencari tutorial satu per satu di YouTube. Mulai dari perintah dasar, gambar rumah, instalasi listrik, piping, hingga desain komponen mesin 3D.
+                </p>
+            </div>
+            <!-- Kanan: 3D Mockup Box Placeholder -->
+           <div class="flex flex-col items-center justify-center relative w-full">
+    <div class="absolute w-72 h-72 bg-[#00F5D4]/10 rounded-full blur-3xl -z-10 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+    
+    <div class="w-full max-w-[380px] aspect-square bg-[#1B263B]/40 border-2 border-slate-700/60 rounded-2xl overflow-hidden shadow-2xl group hover:border-[#00F5D4]/40 transition-all duration-300">
+        <img src="heroamp.png" alt="AutoCAD Mastery Premium Pack" class="w-full h-full object-cover">
+    </div>
+
+    <div class="pt-8 w-full max-w-[380px]">
+        <a href="#harga" class="inline-block w-full text-center bg-[#FF6B00] hover:bg-[#e05e00] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-[#FF6B00]/20 transition-all transform hover:-translate-y-1 duration-200 uppercase tracking-wide">
+            Dapatkan Akses Sekarang
+        </a>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- AGITATE PAIN SECTION -->
+    <section class="py-20 px-4 bg-[#1B263B]/40 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-12">
+                Apakah Anda Mengalami Salah Satu Masalah Ini?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                <!-- Pain Item -->
+                <div class="bg-[#0D1B2A] border border-red-500/20 rounded-xl p-5 flex items-start space-x-4">
+                    <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+                    <p class="text-slate-300 text-sm md:text-base">Bingung saat dosen memberikan tugas AutoCAD</p>
+                </div>
+                <div class="bg-[#0D1B2A] border border-red-500/20 rounded-xl p-5 flex items-start space-x-4">
+                    <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+                    <p class="text-slate-300 text-sm md:text-base">Sudah menonton banyak tutorial YouTube tapi tidak paham</p>
+                </div>
+                <div class="bg-[#0D1B2A] border border-red-500/20 rounded-xl p-5 flex items-start space-x-4">
+                    <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+                    <p class="text-slate-300 text-sm md:text-base">Sulit membuat gambar teknik yang rapi dan profesional</p>
+                </div>
+                <div class="bg-[#0D1B2A] border border-red-500/20 rounded-xl p-5 flex items-start space-x-4">
+                    <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+                    <p class="text-slate-300 text-sm md:text-base">Ingin melamar kerja tetapi skill AutoCAD sekarang membuat kurang percaya diri</p>
+                </div>
+                <div class="bg-[#0D1B2A] border border-red-500/20 rounded-xl p-5 flex items-start space-x-4">
+                    <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+                    <p class="text-slate-300 text-sm md:text-base">Tidak tahu harus belajar darimana karena materi AutoCAD sangat luas</p>
+                </div>
+                <div class="bg-[#0D1B2A] border border-red-500/20 rounded-xl p-5 flex items-start space-x-4">
+                    <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+                    <p class="text-slate-300 text-sm md:text-base">Harus menghabiskan waktu berjam-jam mencari tutorial yang sesuai kebutuhan</p>
+                </div>
+            </div>
+            
+            <div class="text-center bg-[#0D1B2A] border border-slate-700/60 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto">
+                <p class="text-lg md:text-xl font-bold text-white mb-2">Jika Anda merasakan salah satu masalah di atas, Anda tidak sendirian.</p>
+                <p class="text-slate-400 text-sm md:text-base">Banyak mahasiswa teknik, fresh graduate, bahkan calon drafter mengalami hal yang sama.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUTURE DESIRE SECTION -->
+    <section class="py-20 px-4 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#00F5D4]">Bayangkan Jika Anda Bisa...</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Desire Card -->
+                <div class="bg-[#1B263B]/30 border border-[#00F5D4]/10 rounded-xl p-6 flex space-x-4 items-center">
+                    <div class="p-2 bg-[#00F5D4]/10 rounded-lg text-[#00F5D4]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-white font-medium text-sm md:text-base">Menyelesaikan tugas AutoCAD jauh lebih cepat</span>
+                </div>
+                <div class="bg-[#1B263B]/30 border border-[#00F5D4]/10 rounded-xl p-6 flex space-x-4 items-center">
+                    <div class="p-2 bg-[#00F5D4]/10 rounded-lg text-[#00F5D4]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-white font-medium text-sm md:text-base">Membuat gambar teknik dengan standar profesional</span>
+                </div>
+                <div class="bg-[#1B263B]/30 border border-[#00F5D4]/10 rounded-xl p-6 flex space-x-4 items-center">
+                    <div class="p-2 bg-[#00F5D4]/10 rounded-lg text-[#00F5D4]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-white font-medium text-sm md:text-base">Sangat menguasai AutoCAD 2D &amp; 3D</span>
+                </div>
+                <div class="bg-[#1B263B]/30 border border-[#00F5D4]/10 rounded-xl p-6 flex space-x-4 items-center">
+                    <div class="p-2 bg-[#00F5D4]/10 rounded-lg text-[#00F5D4]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-white font-medium text-sm md:text-base">Membuat gambar bangunan, listrik, piping, hingga komponen mesin</span>
+                </div>
+                <div class="bg-[#1B263B]/30 border border-[#00F5D4]/10 rounded-xl p-6 flex space-x-4 items-center">
+                    <div class="p-2 bg-[#00F5D4]/10 rounded-lg text-[#00F5D4]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-white font-medium text-sm md:text-base">Memiliki portofolio yang jauh lebih meyakinkan</span>
+                </div>
+                <div class="bg-[#1B263B]/30 border border-[#00F5D4]/10 rounded-xl p-6 flex space-x-4 items-center">
+                    <div class="p-2 bg-[#00F5D4]/10 rounded-lg text-[#00F5D4]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-white font-medium text-sm md:text-base">Lebih percaya diri saat melamar pekerjaan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION SOLUTION SECTION -->
+    <section class="py-20 px-4 bg-gradient-to-b from-[#0D1B2A] to-[#1B263B]/60 text-center border-b border-slate-800">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <span class="text-xs uppercase tracking-widest text-[#00F5D4] font-bold">The Solution</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white">
+                Inilah Paket Lengkap Belajar AutoCAD untuk Teknik Sipil, Arsitektur &amp; Teknik Mesin
+            </h2>
+            <p class="text-slate-400 text-base md:text-lg max-w-xl mx-auto">
+                Dirancang untuk membantu pemula hingga tingkat lanjut menguasai AutoCAD secara sistematis.
+            </p>
+            <div class="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 rounded-xl p-4 mt-4">
+                <p class="text-sm md:text-base text-white font-semibold">
+                    💡 <span class="text-[#FF6B00]">Bukan sekadar teori</span>, tapi praktik nyata yang digunakan dalam dunia pendidikan dan industri.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE STACK / MODUL SECTION -->
+    <section class="py-20 px-4 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-4">Struktur Modul Pembelajaran</h2>
+            <p class="text-slate-400 text-center text-sm md:text-base mb-12 max-w-xl mx-auto">Materi kurikulum terintegrasi dari fundamental dasar hingga studi kasus spesialisasi industri industri kerja.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Modul 1 -->
+                <div class="bg-[#1B263B]/40 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-mono text-[#00F5D4] mb-2 font-bold">[ MODUL 01 ]</div>
+                        <h3 class="text-white font-bold text-lg mb-3">1000+ Video Penguasaan Tools AutoCAD</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Pelajari fungsi setiap tools AutoCAD secara cepat melalui video pendek yang mudah dipahami.</p>
+                    </div>
+                </div>
+                <!-- Modul 2 -->
+                <div class="bg-[#1B263B]/40 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-mono text-[#00F5D4] mb-2 font-bold">[ MODUL 02 ]</div>
+                        <h3 class="text-white font-bold text-lg mb-3">AutoCAD 2D &amp; 3D Mastery</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Kuasai fondasi AutoCAD mulai dari dasar hingga pembuatan objek solid 3D secara presisi.</p>
+                    </div>
+                </div>
+                <!-- Modul 3 -->
+                <div class="bg-[#1B263B]/40 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-mono text-[#00F5D4] mb-2 font-bold">[ MODUL 03 ]</div>
+                        <h3 class="text-white font-bold text-lg mb-2">AutoCAD Teknik Sipil</h3>
+                        <div class="border-t border-slate-700/50 my-2 pt-2">
+                            <ul class="text-slate-400 text-xs space-y-1 grid grid-cols-2">
+                                <li>• Denah rumah</li>
+                                <li>• Pondasi</li>
+                                <li>• Kolom</li>
+                                <li>• Ringbalk</li>
+                                <li>• Atap</li>
+                                <li>• Instalasi air</li>
+                                <li>• Instalasi listrik</li>
+                                <li>• Plafond</li>
+                            </ul>
+                        </div>
+                        <p class="text-slate-500 text-[11px] mt-1">Dan berbagai gambar kerja arsitektur lainnya.</p>
+                    </div>
+                </div>
+                <!-- Modul 4 -->
+                <div class="bg-[#1B263B]/40 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-mono text-[#00F5D4] mb-2 font-bold">[ MODUL 04 ]</div>
+                        <h3 class="text-white font-bold text-lg mb-2">AutoCAD Teknik Mesin</h3>
+                        <div class="border-t border-slate-700/50 my-2 pt-2">
+                            <ul class="text-slate-400 text-xs space-y-1 grid grid-cols-2">
+                                <li>• Gear</li>
+                                <li>• Bearing</li>
+                                <li>• Velg</li>
+                                <li>• Gearbox</li>
+                                <li>• Poros engkol</li>
+                                <li>• Impeller</li>
+                                <li>• Shockbreaker</li>
+                                <li>• Baling-baling</li>
+                            </ul>
+                        </div>
+                        <p class="text-slate-500 text-[11px] mt-1">Dan puluhan objek teknik manufaktur lainnya.</p>
+                    </div>
+                </div>
+                <!-- Modul 5 -->
+                <div class="bg-[#1B263B]/40 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-mono text-[#00F5D4] mb-2 font-bold">[ MODUL 05 ]</div>
+                        <h3 class="text-white font-bold text-lg mb-3">AutoCAD Piping System</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Belajar membuat rancangan sistem perpipaan industri, tangki penyaluran, dan komponen terkait.</p>
+                    </div>
+                </div>
+                <!-- Modul 6 -->
+                <div class="bg-[#1B263B]/40 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-mono text-[#00F5D4] mb-2 font-bold">[ MODUL 06 ]</div>
+                        <h3 class="text-white font-bold text-lg mb-3">Tips &amp; Trik Efisiensi Kerja</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">40 video rahasia produktivitas untuk mempercepat waktu pembuatan aset gambar proyek.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE MECHANISM SECTION -->
+    <section class="py-20 px-4 bg-[#1B263B]/20 border-b border-slate-800">
+        <div class="max-w-3xl mx-auto border border-slate-700 rounded-3xl p-8 md:p-12 bg-[#0D1B2A] relative overflow-hidden">
+            <div class="absolute -right-16 -top-16 w-36 h-36 bg-[#00F5D4]/5 rounded-full blur-2xl"></div>
+            <div class="space-y-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-white text-center md:text-left">
+                    Mengapa Paket Ini Berbeda?
+                </h2>
+                <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                    Kebanyakan kursus AutoCAD hanya fokus pada pengenalan *command* dasar saja. Masalah utamanya adalah setelah memahami instruksi tombol, banyak orang tetap bingung membuat gambar teknik yang sesungguhnya secara mandiri.
+                </p>
+                <div class="border-l-4 border-[#00F5D4] pl-4 py-2 bg-[#1B263B]/50 rounded-r-xl">
+                    <p class="text-white font-semibold text-sm md:text-base">
+                        Di dalam paket ini Anda belajar:
+                    </p>
+                    <p class="text-[#00F5D4] text-sm md:text-base font-medium mt-1">
+                        Langkah demi langkah membuat objek langsung ke modul proyek nyata yang biasa digunakan di dunia kerja teknik asli.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGET MARKET AUDIENCE MATCH -->
+    <section class="py-20 px-4 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-12">Program Ini Sangat Cocok Untuk:</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                <div class="bg-[#1B263B]/40 border border-slate-800 rounded-xl p-4 text-white font-semibold text-sm md:text-base flex items-center justify-center space-x-2">
+                    <span>✅ Mahasiswa Teknik Sipil</span>
+                </div>
+                <div class="bg-[#1B263B]/40 border border-slate-800 rounded-xl p-4 text-white font-semibold text-sm md:text-base flex items-center justify-center space-x-2">
+                    <span>✅ Mahasiswa Teknik Mesin</span>
+                </div>
+                <div class="bg-[#1B263B]/40 border border-slate-800 rounded-xl p-4 text-white font-semibold text-sm md:text-base flex items-center justify-center space-x-2">
+                    <span>✅ Mahasiswa Arsitektur</span>
+                </div>
+                <div class="bg-[#1B263B]/40 border border-slate-800 rounded-xl p-4 text-white font-semibold text-sm md:text-base flex items-center justify-center space-x-2">
+                    <span>✅ Fresh Graduate Teknik</span>
+                </div>
+                <div class="bg-[#1B263B]/40 border border-slate-800 rounded-xl p-4 text-white font-semibold text-sm md:text-base flex items-center justify-center space-x-2">
+                    <span>✅ Calon Drafter Profesional</span>
+                </div>
+                <div class="bg-[#1B263B]/40 border border-slate-800 rounded-xl p-4 text-white font-semibold text-sm md:text-base flex items-center justify-center space-x-2">
+                    <span>✅ Karyawan Umum (Up-skill)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF & CHECKLIST VALUE -->
+    <section class="py-20 px-4 bg-[#1B263B]/40 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-xs uppercase tracking-widest text-[#00F5D4] font-bold block mb-2">Testimoni &amp; Kualitas</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Kenapa Materi Ini Sangat Lengkap?</h2>
+                <div class="bg-[#0D1B2A] border border-slate-700/60 rounded-2xl p-6 italic text-slate-400 text-sm">
+                    "Sangat membantu untuk ngejar deadline tugas besar gambar struktur bangunan dari dosen sipil. Penjelasannya to-the-point!"
+                    <span class="block text-[#00F5D4] font-bold tracking-wide mt-4 not-italic font-mono text-xs">— Andi, Mahasiswa S1 Sipil</span>
+                </div>
+            </div>
+            <div class="bg-[#0D1B2A] border border-[#00F5D4]/20 rounded-2xl p-6 md:p-8 space-y-4 shadow-xl">
+                <div class="flex items-center space-x-3 text-slate-200">
+                    <span class="text-[#00F5D4] font-bold text-lg">✔</span>
+                    <span class="font-medium text-sm md:text-base">1300+ Total Video Materi Terstruktur</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-200">
+                    <span class="text-[#00F5D4] font-bold text-lg">✔</span>
+                    <span class="font-medium text-sm md:text-base">Mencakup Berbagai Versi Aplikasi AutoCAD</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-200">
+                    <span class="text-[#00F5D4] font-bold text-lg">✔</span>
+                    <span class="font-medium text-sm md:text-base">Materi Terapan Spesifik Teknik Sipil</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-200">
+                    <span class="text-[#00F5D4] font-bold text-lg">✔</span>
+                    <span class="font-medium text-sm md:text-base">Materi Terapan Teknik Mesin Manufaktur</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-200">
+                    <span class="text-[#00F5D4] font-bold text-lg">✔</span>
+                    <span class="font-medium text-sm md:text-base">Materi Rancangan Piping Isometrik</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-200">
+                    <span class="text-[#00F5D4] font-bold text-lg">✔</span>
+                    <span class="font-medium text-sm md:text-base">Materi Jalur Distribusi Instalasi Listrik</span>
+                </div>
+                <div class="flex items-center space-x-3 text-slate-200">
+                    <span class="text-[#00F5D4] font-bold text-lg">✔</span>
+                    <span class="font-medium text-sm md:text-base">Praktik Pemodelan Gambar 3D Nyata</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEEP AGITATE WARNING (PENEKANAN PAIN DAN SOLUSI) -->
+    <section class="py-20 px-4 bg-slate-950 border-b border-slate-800">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <div class="bg-red-950/40 border border-red-500/40 rounded-2xl p-6 text-center">
+                <span class="text-2xl block mb-2">⚠️</span>
+                <h3 class="text-red-500 font-extrabold text-lg tracking-wide uppercase">PERINGATAN UNTUK MAHASISWA TEKNIK, FRESH GRADUATE &amp; CALON DRAFTER</h3>
+            </div>
+
+            <div class="space-y-4">
+                <p class="text-white font-bold text-base md:text-lg">❌ Kalau kamu masih belajar AutoCAD dengan cara mencari tutorial satu per satu di YouTube...</p>
+                <ul class="space-y-2 text-slate-400 text-sm md:text-base pl-6 list-disc border-l-2 border-red-500/30">
+                    <li>Bingung harus mulai belajar dari mana</li>
+                    <li>Waktu berharga habis hanya untuk mencari materi yang sesuai kebutuhan</li>
+                    <li>Tugas kuliah terus menumpuk dan deadline pengumpulan semakin dekat</li>
+                    <li>Sering mendadak *stuck* karena tidak tahu perintah command atau langkah berikutnya</li>
+                    <li>Sulit membuat standar gambar teknik yang rapi, presisi, dan profesional</li>
+                    <li>Harus mengulang-ulang pekerjaan berkali-kali karena fatal salah gambar dasar</li>
+                    <li>Kurang percaya diri saat melakukan presentasi atau mengumpulkan tugas ke dosen</li>
+                </ul>
+            </div>
+
+            <div class="bg-[#1B263B]/40 border border-slate-800 rounded-2xl p-6 space-y-4">
+                <p class="text-xl font-bold text-white flex items-center space-x-2">
+                    <span>😩</span>
+                    <span class="text-red-400">Yang lebih berbahaya...</span>
+                </p>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                    Banyak mahasiswa teknik mengira masalah besarnya hanyalah sebatas urusan pemenuhan tugas kuliah harian saja. **Padahal masalah krusial yang sebenarnya baru akan benar-benar terasa nyata setelah Anda lulus wisuda.**
+                </p>
+            </div>
+
+            <hr class="border-slate-800">
+
+            <div class="space-y-4">
+                <h4 class="text-lg md:text-xl font-bold text-white tracking-wide">🎓 Bayangkan Saat Wisuda Nanti...</h4>
+                <p class="text-slate-400 text-sm md:text-base leading-relaxed">
+                    IPK sudah keluar secara resmi. Ijazah kelulusan sudah di tangan. Teman-teman seangkatan sudah mulai gencar melamar berbagai posisi pekerjaan. Lalu pihak internal HRD perusahaan besar bertanya secara lugas saat interview:
+                </p>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 italic text-center text-white text-base">
+                    "Seberapa jauh tingkat pemahaman dan keahlian nyata sistem kerja AutoCAD Anda?"
+                </div>
+                <p class="text-slate-400 text-sm md:text-base">
+                    Dan saat itulah banyak lulusan teknik baru mulai tersadar... Bahwa sertifikat gelar akademik saja tidak pernah cukup. Perusahaan tidak hanya melihat lembaran nilai ijazah. **Mereka aktif mencari praktisi yang benar-benar memiliki skill siap pakai.**
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm font-medium text-slate-300 bg-red-950/10 p-4 rounded-xl border border-red-900/20">
+                <div>❌ Lulus kuliah tapi masih bingung membuat gambar kerja real industri</div>
+                <div>❌ Tidak percaya diri mengikuti tes langsung AutoCAD saat rekrutmen</div>
+                <div>❌ Kalah saing dengan kandidat pelamar lain yang kesiapan skillnya matang</div>
+                <div>❌ Kesempatan magang emas dan lowongan kerja bagus terlewat sia-sia</div>
+                <div class="md:col-span-2 text-center text-red-400 font-bold mt-2">Terjebak menganggur berbulan-bulan hanya karena menunda belajar dengan dalih: "Nanti saja belajar kalau sudah lulus"</div>
+            </div>
+
+            <p class="text-center font-bold text-white text-sm md:text-base">Padahal saat kelulusan itu resmi tiba, roda persaingan ketat sudah langsung dimulai.</p>
+
+            <hr class="border-slate-800">
+
+            <div class="bg-gradient-to-r from-[#1B263B] to-[#0D1B2A] border border-[#00F5D4]/20 rounded-2xl p-6 md:p-8 text-center space-y-4">
+                <p class="text-sm font-mono text-[#00F5D4] font-bold uppercase tracking-widest">Solusi Terarah Akhir Penantian</p>
+                <h3 class="text-xl md:text-2xl font-bold text-white">Karena itulah kami secara khusus menghadirkan: PAKET BELAJAR AUTOCAD 1300+ MATERI LENGKAP</h3>
+                <p class="text-slate-400 text-sm md:text-base">
+                    Untuk membantu kamu menguasai program AutoCAD secara jauh lebih terarah. Bukan sekadar memahami deretan tombol command, tetapi terfokus penuh membangun pondasi skill teknis yang benar-benar mutlak dibutuhkan saat masa perkuliahan, pengerjaan proyek, magang, maupun dunia kerja nyata.
+                </p>
+            </div>
+
+            <!-- List Ringkasan Paket -->
+            <div class="bg-[#0D1B2A] border border-slate-800 rounded-xl p-6">
+                <p class="text-white font-bold mb-4 text-sm md:text-base">📚 Ringkasan Yang Akan Langsung Kamu Dapatkan:</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-slate-300">
+                    <div>➡️ 1000+ Video Penguasaan Tools AutoCAD</div>
+                    <div>➡️ Penguasaan AutoCAD Dasar, 2D &amp; 3D</div>
+                    <div>➡️ Paket Studi Kasus Teknik Sipil</div>
+                    <div>➡️ Paket Studi Kasus Teknik Mesin</div>
+                    <div>➡️ Paket Perancangan AutoCAD Piping</div>
+                    <div>➡️ Desain Skema Instalasi Listrik</div>
+                    <div>➡️ Bedah Praktik Gambar Teknik Nyata</div>
+                    <div>➡️ Kumpulan Tips &amp; Trik Kelas Profesional</div>
+                    <div class="sm:col-span-2">➡️ Akses Kompatibilitas Berbagai Versi AutoCAD (Versi 2000–2026)</div>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-[#00F5D4] bg-[#1B263B]/30 p-5 rounded-r-xl space-y-2">
+                <h4 class="text-white font-bold text-sm md:text-base">💡 Bayangkan 3-6 Bulan Dari Sekarang...</h4>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+                    Saat teman-teman seangkatanmu masih bingung meraba arah belajar AutoCAD mulai dari mana... Kamu sudah menguasai fungsi penuh tools penting, mampu membuat berbagai format cetak gambar teknik struktural, dan memiliki portofolio skill matang yang siap digunakan.
+                </p>
+                <p class="text-white font-semibold text-xs md:text-sm pt-1">Karena keahlian tidak dibangun dalam semalam. Skill nyata dibangun dari ketegasan keputusan kecil yang berani kamu ambil hari ini.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION WITH PRICING & LINK -->
+    <div id="harga"></div>
+    <section class="py-24 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-radial from-[#1B263B]/50 via-transparent to-transparent z-0"></div>
+        <div class="max-w-xl mx-auto bg-gradient-to-b from-[#1B263B] to-[#0D1B2A] border-2 border-[#00F5D4]/30 rounded-3xl p-8 md:p-12 shadow-2xl relative z-10">
+            <div class="mb-8 p-6 bg-slate-950/80 border border-[#00F5D4]/20 rounded-2xl shadow-inner text-center">
+                <p class="text-[#00F5D4] text-xs font-extrabold uppercase tracking-widest flex items-center justify-center gap-1.5 animate-pulse">
+                    ⚡ Promo Akan Berakhir
+                </p>
+                
+                <div class="grid grid-cols-3 gap-3 mt-4 max-w-xs mx-auto">
+                    <div class="bg-[#1B263B]/60 border border-slate-800 rounded-xl p-3 shadow-lg shadow-black/40">
+                        <span id="timer-menit" class="block text-2xl md:text-3xl font-extrabold text-white tracking-tight font-mono drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">15</span>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-500 mt-1">Menit</span>
+                    </div>
+                    <div class="bg-[#1B263B]/60 border border-slate-800 rounded-xl p-3 shadow-lg shadow-black/40">
+                        <span id="timer-detik" class="block text-2xl md:text-3xl font-extrabold text-white tracking-tight font-mono drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">00</span>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-500 mt-1">Detik</span>
+                    </div>
+                    <div class="bg-[#1B263B]/60 border border-slate-800 rounded-xl p-3 shadow-lg shadow-black/40">
+                        <span id="timer-ms" class="block text-2xl md:text-3xl font-extrabold text-[#FF6B00] tracking-tight font-mono drop-shadow-[0_0_10px_rgba(255,107,0,0.3)]">000</span>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-500 mt-1">MS</span>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                (function() {
+                    // Set durasi hitung mundur: 15 menit dalam milidetik
+                    const durasiMiliDetik = 15 * 60 * 1000; 
+                    const waktuTarget = Date.now() + durasiMiliDetik;
+
+                    function perbaruiTimer() {
+                        const waktuSekarang = Date.now();
+                        const sisaWaktu = waktuTarget - waktuSekarang;
+
+                        if (sisaWaktu <= 0) {
+                            document.getElementById('timer-menit').textContent = "00";
+                            document.getElementById('timer-detik').textContent = "00";
+                            document.getElementById('timer-ms').textContent = "000";
+                            cancelAnimationFrame(idAnimasi);
+                            return;
+                        }
+
+                        // Kalkulasi konversi waktu ke menit, detik, dan milidetik
+                        const totalDetik = Math.floor(sisaWaktu / 1000);
+                        const menit = Math.floor(totalDetik / 60);
+                        const detik = totalDetik % 60;
+                        const milidetik = sisaWaktu % 1000;
+
+                        // Tampilkan hasil ke elemen HTML dengan format angka tetap
+                        document.getElementById('timer-menit').textContent = String(menit).padStart(2, '0');
+                        document.getElementById('timer-detik').textContent = String(detik).padStart(2, '0');
+                        document.getElementById('timer-ms').textContent = String(milidetik).padStart(3, '0');
+
+                        idAnimasi = requestAnimationFrame(perbaruiTimer);
+                    }
+
+                    // Menjalankan animasi loop dengan performa tinggi (tanpa jeda interval)
+                    let idAnimasi = requestAnimationFrame(perbaruiTimer);
+                })();
+            </script>
+            <span class="bg-red-500/10 text-red-400 text-xs font-mono font-bold px-3 py-1 rounded-full border border-red-500/20 uppercase tracking-widest">
+                Penawaran Terbatas Hari Ini
+            </span>
+            <div class="mt-6 space-y-2">
+                <p class="text-slate-500 line-through text-sm md:text-base font-medium">Harga Normal: Rp 497.000</p>
+                <p class="text-slate-400 text-xs font-mono">Total Value Kurikulum: Rp 2.500.000</p>
+                <h3 class="text-slate-400 text-xs uppercase tracking-widest font-bold mt-4">🔥 Harga Promo Spesial Hari Ini</h3>
+                <p class="text-4xl md:text-5xl font-extrabold text-white tracking-tight py-2 drop-shadow-[0_0_15px_rgba(0,245,212,0.2)]">
+                    Rp <span class="text-[#00F5D4]">97.000</span>
+                </p>
+                <div class="text-slate-400 text-xs md:text-sm font-medium space-y-1 pt-2">
+                    <p class="text-emerald-400 font-semibold">✔ Hanya bayar satu kali (No Hidden Fees)</p>
+                    <p>✔ Hak akses lisensi materi selamanya</p>
+                </div>
+            </div>
+
+            <!-- Tombol Order Langsung Ke Mayar Checkout -->
+            <div class="mt-8">
+                <a href="https://easy-digital.myr.id/pl/autocad-mastery-pack" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center bg-[#FF6B00] hover:bg-[#e05e00] text-white font-extrabold text-base md:text-lg px-6 py-4 rounded-2xl shadow-lg shadow-[#FF6B00]/20 transition-all transform hover:scale-[1.02] duration-200 uppercase tracking-wide">
+                    Ya, Saya Ingin Belajar AutoCAD Sekarang
+                </a>
+            </div>
+            
+            <p class="text-slate-500 text-[11px] mt-4 leading-relaxed">
+                🔒 Pembayaran aman, instan, otomatis tervalidasi via sistem gateway Mayar. Akses link download/dashboard materi dikirim langsung ke email Anda dalam 1 detik setelah pembayaran berhasil.
+            </p>
+        </div>
+
+        <!-- Scarcity / Urgency Text Footer -->
+        <div class="max-w-2xl mx-auto mt-12 text-slate-400 text-xs md:text-sm px-4 space-y-2 leading-relaxed">
+            <p>⏳ Setiap hari kamu menunda belajar AutoCAD, orang lain di luar sana sedang konsisten meningkatkan kemampuannya.</p>
+            <p class="text-white font-semibold">Dan ketika kesempatan lowongan kerja impian itu datang... Yang dipilih perusahaan bukan yang paling lama menunda, tetapi kandidat yang paling siap.</p>
+            <p class="text-[#00F5D4] font-medium pt-2 text-sm">Jangan tunggu sampai lulus baru panik karena kapasitas skill praktismu masih nol. Mulai bangun kemampuan karir masa depanmu hari ini!</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-slate-600 border-t border-slate-900 text-xs font-mono">
+        &copy; 2026 AutoCAD Mastery Pack. Powered by Mayar Gateway. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
