@@ -11,6 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1406954093809657');
+    fbq('track', 'PageView'); // Mentriger PageView otomatis saat halaman tayang
+    </script>
+    <noscript><img height="1" width="1" border="0" style="display:none"
+    src="https://www.facebook.com/tr?id=1406954093809657&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -26,7 +44,7 @@
                 linear-gradient(to right, rgba(0, 245, 212, 0.03) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(0, 245, 212, 0.03) 1px, transparent 1px);
         }
-/* Perbaikan Animasi Pulse Tombol */
+    /* Perbaikan Animasi Pulse Tombol */
     @keyframes joss-pulse {
         0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.4); }
         50% { transform: scale(1.04); box-shadow: 0 20px 35px -5px rgba(255, 107, 0, 0.7); }
@@ -63,7 +81,8 @@
     </div>
 
     <div class="pt-8 w-full max-w-[380px]">
-        <a href="#harga" class="inline-block w-full text-center bg-[#FF6B00] hover:bg-[#e05e00] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-[#FF6B00]/20 transition-all transform hover:-translate-y-1 duration-200 uppercase tracking-wide">
+        <!-- Tombol CTA Hero: Ditambahkan onclick untuk trigger AddToCart -->
+        <a href="#harga" onclick="fbq('track', 'AddToCart');" class="inline-block w-full text-center bg-[#FF6B00] hover:bg-[#e05e00] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-[#FF6B00]/20 transition-all transform hover:-translate-y-1 duration-200 uppercase tracking-wide">
             Dapatkan Akses Sekarang
         </a>
     </div>
@@ -525,9 +544,9 @@
                 </div>
             </div>
 
-            <!-- Tombol Order Langsung Ke Mayar Checkout -->
+            <!-- Tombol Order Utama Ke Mayar Checkout: Ditambahkan onclick untuk trigger AddToCart -->
             <div class="mt-8">
-                <a href="https://easy-digital.myr.id/pl/autocad-mastery-pack" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center bg-[#FF6B00] hover:bg-[#e05e00] text-white font-extrabold text-base md:text-lg px-6 py-4 rounded-2xl shadow-lg shadow-[#FF6B00]/20 transition-all transform hover:scale-[1.02] duration-200 uppercase tracking-wide">
+                <a href="https://easy-digital.myr.id/pl/autocad-mastery-pack" onclick="fbq('track', 'AddToCart');" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center bg-[#FF6B00] hover:bg-[#e05e00] text-white font-extrabold text-base md:text-lg px-6 py-4 rounded-2xl shadow-lg shadow-[#FF6B00]/20 transition-all transform hover:scale-[1.02] duration-200 uppercase tracking-wide">
                     Ya, Saya Ingin Belajar AutoCAD Sekarang
                 </a>
             </div>
